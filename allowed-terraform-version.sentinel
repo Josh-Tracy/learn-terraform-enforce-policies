@@ -1,9 +1,9 @@
 import "tfplan"
 
 main = rule {
-  tfplan.terraform_version = "^(0\\.1(4|5)|1\\.0)\\.\\d+$"
+  tfplan.terraform_version match "^(0\\.1(4|5)|1\\.0)\\.\\d+$"
 }
 
 main = rule {
-  tfplan.terraform_version = "^(1\\.*\\.*)\\.\\d+$"
+  tfplan.terraform_version match "^(1\\.*\\.*)\\.\\d+$"
 }
